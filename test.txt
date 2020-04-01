@@ -1,0 +1,5 @@
+State is data that is mutated in your component. A component's state, unlike a component's props, can change during the component's life.
+
+for a component's props to change, its parent component needs to send it new props (after which, the component would 'remake' itself with the new props). State provides us with a way to maintain and update information within a component without requiring its parent to somehow send updated information.
+
+Imagine that we have a single component which displays an integer. When a user clicks the component, it should increment its integer by 1. If we were to represent this integer value in the component using state, the component could increment itself without needing any fussy prop passing:
